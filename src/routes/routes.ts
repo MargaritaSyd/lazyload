@@ -9,16 +9,16 @@ interface Route {
   name: string;
 }
 
-const Lazy1 = lazy(() => import(/*webpackChunkName: "LazyPage1"*/'../01-lazyload/pages/LazyPage1'));
+const ShoppingPage = lazy(() => import(/*webpackChunkName: "ShoppingPage"*/'../component-patterns/pages/ShoppingPage'));
 const Lazy2 = lazy(() => import(/*webpackChunkName: "LazyPage2"*/'../01-lazyload/pages/LazyPage2'));
 const Lazy3 = lazy(() => import(/*webpackChunkName: "LazyPage3"*/'../01-lazyload/pages/LazyPage3'));
 
 export const routes: Route[] = [
   {
-    to: '/lazy1',
-    path: '/lazy1',
-    Component: Lazy1,
-    name: 'Lazy1',
+    to: '/shopping',
+    path: '/shopping',
+    Component: ShoppingPage,
+    name: 'Shopping',
   },
   {
     to: '/lazy2',
