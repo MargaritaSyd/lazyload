@@ -1,1 +1,1 @@
-# lazyload
+# Component pattern
